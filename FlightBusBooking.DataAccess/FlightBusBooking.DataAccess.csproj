@@ -14,9 +14,4 @@
     <ProjectReference Include="..\FlightBusBooking.Entities\FlightBusBooking.Entities.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Abstract\" />
-    <Folder Include="Concrete\" />
-  </ItemGroup>
-
 </Project>
