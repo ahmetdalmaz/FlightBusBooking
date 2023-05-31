@@ -11,4 +11,9 @@
     <Folder Include="Concrete\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FlightBusBooking.DataAccess\FlightBusBooking.DataAccess.csproj" />
+    <ProjectReference Include="..\FlightBusBooking.Entities\FlightBusBooking.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
