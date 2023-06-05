@@ -10,6 +10,6 @@ namespace FlightBusBooking.DataAccess.Concrete.EntityFramework
 {
     public class EfCountryDal:EfEntityRepositoryBase<Country,FlightBusBookingContext>,ICountryDal
     {
-        
+
     }
 }
