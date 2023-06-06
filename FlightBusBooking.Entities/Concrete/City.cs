@@ -15,6 +15,7 @@ namespace FlightBusBooking.Entities.Concrete
         public int CountryId { get; set; }
 
         public List<District> Districts { get; set; }
+       // public List<Airport> Airports { get; set; }
 
     }
 }
