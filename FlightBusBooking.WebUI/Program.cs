@@ -23,7 +23,7 @@ builder.Services.AddIdentity<AppUser, AppRole>(opt =>
 builder.Services.ConfigureApplicationCookie(config =>
 {
     config.LoginPath = new PathString("/Admin/Auth/Login");
-    config.LogoutPath = new PathString("/Admin/Auth/Login");
+    config.LogoutPath = new PathString("/Admin/Auth/Logout");
     config.Cookie = new CookieBuilder
     {
         Name = "FlightBusBooking",
@@ -57,9 +57,6 @@ app.UseAuthentication();
 
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.UseEndpoints(endpoints =>
 {
@@ -68,5 +65,10 @@ app.UseEndpoints(endpoints =>
       pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
     );
 });
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
 
 app.Run();
