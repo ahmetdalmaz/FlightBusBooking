@@ -17,8 +17,8 @@ namespace FlightBusBooking.WebUI.Controllers
 
         public IActionResult Index()
         {
-            return View(); 
-        }
+            return View();
+        }//854
 
         public IActionResult Privacy()
         {
