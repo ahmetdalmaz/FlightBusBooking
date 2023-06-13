@@ -17,7 +17,7 @@ namespace FlightBusBooking.WebUI.Areas.Admin.Controllers
             _userManager = userManager;
             _mapper = mapper;
         }
-
+        // açıklamaaa
         public IActionResult Index()
         {
             var user = _userManager.Users.ToList();
