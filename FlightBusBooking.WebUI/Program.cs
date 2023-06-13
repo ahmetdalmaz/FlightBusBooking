@@ -4,6 +4,7 @@ using FlightBusBooking.DataAccess.Abstract;
 using FlightBusBooking.DataAccess.Concrete.EntityFramework;
 using FlightBusBooking.Entities.Concrete;
 using Microsoft.AspNetCore.Identity;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,9 @@ builder.Services.AddSingleton<ICountryDal, EfCountryDal>();
 builder.Services.AddSingleton<ICountryService, CountryManager>();
 builder.Services.AddSession();
 builder.Services.AddDbContext<FlightBusBookingContext>();
+
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
 builder.Services.AddIdentity<AppUser, AppRole>(opt =>
 {
     opt.Password.RequireNonAlphanumeric = false;
