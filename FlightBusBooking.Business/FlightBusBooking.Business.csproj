@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Abstract\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\FlightBusBooking.DataAccess\FlightBusBooking.DataAccess.csproj" />
     <ProjectReference Include="..\FlightBusBooking.Entities\FlightBusBooking.Entities.csproj" />
   </ItemGroup>

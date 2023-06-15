@@ -18,8 +18,7 @@ namespace FlightBusBooking.DataAccess.EntityConfigurations
             builder.Property(c => c.CountryId).UseIdentityColumn();
             builder.Property(c=>c.CountryName).HasColumnType("varchar").HasMaxLength(50);
 
-            builder.HasMany(c=>c.Cities).WithOne(ct=>ct.Country).HasForeignKey(ct => ct.CountryId).HasPrincipalKey(c=>c.CountryId);
-
+            
         }
     }
 }

@@ -14,7 +14,7 @@ namespace FlightBusBooking.DataAccess.Concrete.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=.;Database=FlightBusBooking;Trusted_Connection=true; Encrypt = false;");
+            optionsBuilder.UseSqlServer("Server=SAMETTIG39F5\\SQLEXPRESS;Database=FlightBusBooking;Trusted_Connection=true; Encrypt = false;");
         }
         public DbSet<City> Cities { get; set; }
         public DbSet<Country> Countries { get; set; }
