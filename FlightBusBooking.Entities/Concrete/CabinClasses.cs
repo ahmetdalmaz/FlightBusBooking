@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace FlightBusBooking.Entities.Concrete
 {
-    public class Airline: IEntity
+    public class CabinClasses: IEntity
     {
-        public int AirlineId { get; set; }
-        public string? AirlineName { get; set; }
-        public int AirlineCode { get; set; }
+        public int CabinClassId { get; set; }
+        public string? CabinClassName { get; set; }
     }
 }
